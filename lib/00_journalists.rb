@@ -40,9 +40,4 @@ puts maj
 puts underscore
 puts position
 
-tableau.sort_by
-z = 0
-50.times do
-    puts tableau[z]
-    z += 1
-end
+puts tableau.min(50) {|a,b| a.length <=> b.length}
